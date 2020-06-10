@@ -1,0 +1,87 @@
+* {
+	color: white;
+}
+
+.bg {
+	background: url('../img/JABA-POINT.RU_tumannost_zvezdy_vselennaya_svet.jpg') no-repeat;
+	width: 100% !important;
+	height: 100vh;
+}
+
+.top {
+	display: inline;
+}
+
+.top-lable {
+	font-size: 2.5rem;
+}
+
+.btn-toggle-sidn-up {
+	font-size: 32px !important;
+    font-weight: bolder !important;
+    float: right;
+}
+
+label {
+	color: white;
+	font-weight: bold;
+}
+
+input {
+	color: black;
+}
+
+.form-container {
+	/* float: left; */
+	width: 100%;
+	border: 0px solid grey;
+	padding: 30px 40px;
+	margin-top: 20vh;
+	-webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+
+.fa {
+	color: black;
+}
+
+.container-fluid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#errorPassword,
+#errorLogin,
+#errorPasswordSignUp,
+#errorLoginSignUp,
+#errorEmailSignUp,
+#errorConfPasswordSignUp { 
+	color: red;
+	font-weight: bold;
+}
+
+#hintLogin,
+#hintPassword,
+#hintPasswordSignUp,
+#hintLoginSignUp,
+#hintEmailSignUp,
+#hintConfPasswordSignUp {
+	color: #7FFF00;
+	font-weight: bold;
+}
+
+.storage {
+	font-size: 40px;
+}
+
+.hidden {
+	display: none;
+}

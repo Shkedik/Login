@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Log in</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/25483c2937.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid bg">
+		<div class="row">
+				<form class="form-container" id="form-login">
+					<div class="top">
+						<label class="top-lable">Login</label>
+						<button type="button" 
+						class="btn btn-success btn-toggle-sidn-up"
+						onclick="changeForm()">Sign Up</button>
+					</div>
+					<div class="form-group">
+						<label for="email">Login</label>
+						<div class="input-group">
+							<input type="text"
+							class="form-control" 
+							minlength="5"
+							id="login" 
+							placeholder="Login">
+						</div>
+						<div id="errorLogin"></div>
+						<div id="hintLogin"></div>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<!-- <i class="fas fa-eye"></i> -->
+						<br>
+						<div class="input-group">
+							<input type="password"
+								class="form-control" 
+								id="password" 
+								placeholder="Password" 
+								data-toggle="password">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="fa fa-eye" id="password-eye"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="errorPassword"></div>
+					<div id="hintPassword"></div>
+					<button
+					type="button"
+					id="btn" 
+					class="btn btn-primary btn-block"
+					onclick="logIn()"
+					disabled>Submit</button>
+				</form>
+
+				<form id="form-sign-up" class="form-container hidden" action='' method="POST">
+					<div class="top">
+						<label class="top-lable">Sign Up</label>
+						<button type="button" 
+						class="btn btn-success btn-toggle-sidn-up"
+						onclick="changeFormOnLogin()">Login</button>
+					</div>
+					<div class="form-group">
+						<label for="Login">Login</label>
+						<input type="text"
+						class="form-control input-xlarge"  
+						id="login-sugn-up" 
+						name="login-sugn-up" 
+						placeholder="Login">
+						<div id="errorLoginSignUp"></div>
+						<div id="hintLoginSignUp"></div>
+					</div>
+				
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="text"  
+						class="form-control input-xlarge"  
+						id="email-sugn-up" 
+						name="email-sugn-up" 
+						placeholder="E-mail">
+						<div id="errorEmailSignUp"></div>
+						<div id="hintEmailSignUp"></div>
+					</div>
+				
+					<div class="form-group">
+						<label for="password">Password</label>
+						<div class="input-group">
+							<input type="password" 
+							class="form-control input-xlarge" 
+							id="password-sugn-up"
+							name="password-sugn-up" 
+							placeholder="Password">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="fa fa-eye" id="password-eye-sign-up"></i>
+								</span>
+							</div>
+						</div>
+						<div id="errorPasswordSignUp"></div>
+						<div id="hintPasswordSignUp"></div>
+					</div>
+				
+					<div class="form-group">
+						<label for="password_confirm">Confirm Password</label>
+						<div class="input-group">
+							<input type="password" 
+							class="form-control input-xlarge" 
+							id="password-confirm" 
+							name="password_confirm" 
+							placeholder="Confirm Password">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="fa fa-eye" id="password-conf-eye-sign-up"></i>
+								</span>
+							</div>
+						</div>
+						<div id="errorConfPasswordSignUp"></div>
+						<div id="hintConfPasswordSignUp"></div>	
+					</div>
+				
+					<div class="control-group">
+						<button type="button" 
+						id="btn-sign-up" 
+						class="btn btn-sugn-up btn-primary btn-block"
+						onclick="signUp()"
+						disabled>Register</button>
+					</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="./js/signup.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
